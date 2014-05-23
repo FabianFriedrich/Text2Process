@@ -1,0 +1,5 @@
+The customer enters the withdrawal amount. The ATM
+returns cash to the customer and changes his account
+balance. If the balance on customer’s account is less than the
+withdrawal amount, the ATM returns an error.
+

@@ -1,0 +1,7 @@
+Der NB fordert die Messwerte beim MDL an.
+Der MDL prüft die eingegangene Anforderung.
+Der MDL lehnt die Anforderung des NB ab oder der MDL führt die Messung durch.
+Der MDL teilt dem NB das Scheitern der Auslesung mit oder der MDL übermittelt die Messwerte an den NB.
+Der NB bereitet die Messwerte auf.
+Der NB übermittelt die veränderten Messwerte an den MDL.
+der NB übermittelt die Messwerte an den LF.

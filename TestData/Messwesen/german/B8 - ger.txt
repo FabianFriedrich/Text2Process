@@ -1,0 +1,8 @@
+1) Der MDLA meldet sich bim NB ab.
+2) Der NB prüft die Abmeldung.
+3a) Der NB lehnt die Abmeldung des ab oder
+3b) der NB bestätigt bestätigt die Abmeldung des MDLA vorläufig.
+4) Der NB ordnet sich als MDL zu.
+5) Der NB informiert den MLDA über das Zuordnungsende des MDLA und den Zuordnungsbeginn des NB.
+6) Der NB informiert den MSB über die Zuordnung des NB.
+7) Der NB informiert den LF über die Zuordnung des NB.

@@ -1,0 +1,1 @@
+1) Der MSBN fordert ein Geräteübernahmeangebot des MSBA an.2) Der MSBA übermittelt ein Angebote für die Geräteübernahme an den MSBN.3) Der MSBN bestellt beim MSBA.4) Der MSBA bestätigt dem MSBN die Bestellung und übermittelt die Stammdaten.

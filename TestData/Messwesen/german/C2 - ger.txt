@@ -1,0 +1,8 @@
+Der Störungsmelder meldet dem MSB eine Störung oder der MSB hat einen eigener Verdacht einer Störung.
+Der MSB prüft die Störungsmeldung.
+der MSB lehnt die Störungsmeldung des Störungsmelders ab oder der MSB bestätigt die Störungsmeldung des Störungsmelders.
+Wenn der MSB die Störungsmeldung des Störungsmelders bestätigt, informiert er den NB und den MDL.
+Der MSB behebt die Störung an der Messeinrichtung.
+Der MSB teilt die Ergebnisse der Störungsbehebung dem Störungsmelder mit.
+Der MSB informiert den NB über die Störungsbehebung.
+Der MSB informiert den MDL über die Störungsbehebung.

@@ -1,0 +1,7 @@
+Der MSBN meldet den Beginn des Messstellenbetriebs (ggf. einschließlich der Messung) beim NB an.
+Der NB prüft die eingegangene Anmeldung des MSBN.
+Der NB lehnt die Anmeldung des MSBN ab oder der NB bestätigt die Anmeldung des MSBN.
+Der MSBN führt die Geräteübernahme und/oder den Gerätewechsel durch.
+Der NB teilt dem MSBN und dem MSBA die Zuordnung des MSBN zur Messstelle in Bezug auf Messstellenbetrieb und ggf. Messung mit.
+Der NB teilt die Bestätigung der Anmeldung des MSBN dem LF und dem MDLA mit.
+

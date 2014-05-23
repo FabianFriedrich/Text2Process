@@ -1,0 +1,6 @@
+The MPON reports the beginning of the measuring point operations (including any measurement) at the GO.
+The GO verifies the received notification of the MPON.
+The GO does not accept the application of the MPON or the GO confirmes the application of the MPON.
+The MPON and the MPOO perform the equipment acquisition and/or the device change.
+The GO shall notify the MPON and the MPOO about the assignment of the MPON to the measuring point in terms of meter operation and any measurement.
+The GO shall notify the SP and the MSPO about the confirmation of the application of the MPON.

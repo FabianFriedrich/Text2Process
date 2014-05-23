@@ -1,0 +1,17 @@
+Document Location:
+http://www.bundesnetzagentur.de/cae/servlet/contentblob/159722/publicationFile/8504/WiM_Anlage_1_Wechselprozesse.pdf
+Stand 09.09.2010
+Last Access: 2010-10-08
+
+L		-	Letztverbraucher			-	end consumer					-	EC
+LF		-	Lieferant					-	supplier						-	SP
+MSB		-	Messstellenbetreiber 		-	metering point operator 		-	MPO
+MSBA	-	Messstellenbetreiber alt	-	metering point operator old		-	MPOO
+MSBN	-	Messstellenbetreiber neu	-	metering point operator new		-	MPON
+MDL		- 	Messdienstleister 			-	metering service provider 		-	MSP
+MDLA	- 	Messdienstleister alt		-	metering service provider old	-	MSPO
+MDLN	-	Messdienstleister neu		-	metering service provider new	-	MSPN
+NB		- 	Netzbetreiber				-	grid operator					-	GO
+AN		-	Anschlussnutzer				-	power supply user				-	PU
+AG		-	Angefragter					-	inquired person					-	IP
+AF		-	Anfragender					-	inquirer						-	INQ

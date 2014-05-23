@@ -1,0 +1,6 @@
+#Translated version of B2  http://translate.google.com/#de|en| .
+
+Der MSBN übermittelt dem MSBA die Kündigung.
+Der MSBA prüft die Kündigung.
+Der MSBA lehnt die Kündigung des MSBN ab oder
+Der MSBA bestätigt die Kündigung des MSBN.

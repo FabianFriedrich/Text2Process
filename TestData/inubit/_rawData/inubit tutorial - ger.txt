@@ -1,0 +1,9 @@
+An dem Prozess sind die Assembler AG (Abteilung Produktion) und ihr Zulieferer (Abteilung Buchhaltung) beteiligt. Der Prozess startet regelm‰ﬂig an jedem Monatsersten, wenn die Assembler AG einen Auftrag an den Zulieferer sendet, um Produktteile nachzubestellen. 
+a. Die Assembler AG sendet die Bestellung an den Zulieferer. 
+b. Der Zulieferer bearbeitet die Bestellung. 
+c. Der Zulieferer sendet die Rechnung an die Assembler AG. 
+d. Die Assembler AG erh‰lt die Rechnung.  
+
+
+
+

@@ -1,0 +1,31 @@
+1) Der MSBN meldet den Messstellenbetrieb beim NB an.
+
+2) Der NB prüft die Anmeldung des MSBN.
+
+3a) Der NB lehnt die Anmeldung des MSBN ab oder
+3b) der NB bestätigt die Anmeldung des MSBN.
+
+4) Der NB informiert den MSBA über die Anmeldebestätigung gegenüber dem MSBN.
+
+5) Der NB informiert den MDLA über die Anmeldebestätigung gegenüber dem MSBN.
+
+6) Der MSBN und der MSBA führen die Geräteübernahme und/oder den Gerätewechsel durch.
+
+7a) Der MSBN teilt dem NB das Scheitern des Gesamtvorgangs mit oder
+7b) der MSBN teilt dem NB den erfolgreichen Abschluss des Gesamtvorgangs mit.
+
+8) Der NB teilt dem MSBN das Scheitern des Gesamtvorgangs durch Fristablauf mit, wenn nach maximaler Frist des Gesamtvorgangs zu Geräteübernahme/Gerätewechsel keine Meldung des MSBN beim NB vorliegt.
+
+9) Der NB bestätigt dem MSBN das Scheitern der Zuordnung.
+
+10) Der NB ordnet den MSBN zu.
+
+11) Der NB bestätigt dem MSBN die Zuordnung.
+
+12a) Der NB informiert den MSBA über das Scheitern der Zuordnung des MSBN oder
+12b) der NB informiert den MSBA über die Zuordnung des MSBN.
+
+13a) Der NB informiert den MDLA über das Scheitern der Zuordnung des MSBN oder
+13b) der NB informiert den MDLA über die Zuordnung des MSBN.
+
+14) Der NB informiert den LF über die Zuordnung des MSBN.

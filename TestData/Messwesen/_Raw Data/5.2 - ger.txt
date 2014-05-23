@@ -1,0 +1,6 @@
+Der MSBA meldet den Messstellenbetrieb (ggf. einschließlich Messung) beim NB ab.
+Der NB prüft die eingegangene Abmeldung des MSBA.
+Der NB lehnt die Abmeldung des MSBA ab oder der NB bestätigt die Abmeldung des MSBA.
+Der NB führt die Geräteübernahme oder den Gerätewechsel gemäß Prozess Gerätewechsel oder Geräteübernahme durch.
+Der NB sendet die Information über das Ende des Messstellenbetriebs an den LF und den MDL.
+

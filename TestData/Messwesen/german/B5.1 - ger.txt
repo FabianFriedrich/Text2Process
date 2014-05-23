@@ -1,0 +1,10 @@
+1) Der MSBN  zeigt dem MSBA Gerätewechselabsicht an.
+2a) Der MSBA kündigt dem MSBN Eigenausbau an oder 
+2b) der MSBA teilt dem MSBN keinen Eigenausbau durch MSBA mit.
+3) Der MSBN oder der MSBA führen die Endablesung durch.
+4) Der MSBN oder der MSBA bauen die alten Geräte aus.
+5) Der MSBN baut die neuen Geräte ein.
+6) Der MSBN liesst den Einbauzählerstand aus.
+7) Der MSBN übermittelt dem NB die Endablesewerte.
+8) Der MSBN teil dem NB den Gerätewechsel, die Stammdaten und den Einbauzählerstand mit.
+9) Der NB teilt dem MDL den Gerätewechsel, die Stammdaten, den Ausbauzählerstand, und den Einbauzählerstand mit.

@@ -1,0 +1,1 @@
+1) Der MDLN meldet die Messung beim NB an.2) Der NB prüft die Anmeldung des MDLN.3a) Der NB lehnt die Anmeldung des MDLN ab oder3b) der NB bestätigt die Anmeldung des MDLN.4) Der NB ordnet den MDLN zu.5) Der NB informiert den MDLN über die Zuordnung des MDLN.6) Der NB informiert den MSB über die Zuordnung des MDLN.7) Der NB informiert den LF über die Zuordnung des MDLN.

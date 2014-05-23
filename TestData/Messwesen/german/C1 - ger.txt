@@ -1,0 +1,5 @@
+Der LF/AN/NB beauftragt eine Änderung beim MSB oder der MSB veranlasst selbst eine Änderung.
+Der MSB prüft die Beauftragung.
+Der MSB lehnt die Änderung der Messstelle durch den LF/AN/NB ab oder der MSB bestätigt den Auftrag des LF/AN/NB. 
+Der MSB führt die Messstellenänderung durch.
+Der MSB meldet den Vollzug an den LF/AN/NB oder der MSB meldet dem LF/AN/NB das Scheitern der Änderungen. 

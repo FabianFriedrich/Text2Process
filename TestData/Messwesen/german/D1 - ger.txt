@@ -1,0 +1,4 @@
+Der L teilt dem Anfragenden die Änderung seiner Stammdaten mit.
+der AF teilt dem AG die Änderung mit.
+Der AG prüft ob die Stammdaten zu dem gwünschten Zeitpunkt geändert werden können.
+Der AG bestätigt die Änderung des AF oder der AG lehnt die Änderung des AF ab. 

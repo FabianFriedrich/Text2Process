@@ -1,0 +1,3 @@
+1) Der AF übermittelt die Geschäftsdatenanfrage an den AG.
+2) Der AG prüft die Anfrage durch den Angefragten.
+3 Der AG beantwortet die Anfrage des AF abhängig vom Ergebnis der Prüfung, d.h. Übermittlung der Daten oder Ablehnung.

@@ -1,0 +1,12 @@
+1) Der MSBA meldet sich beim NB ab.
+2) Der NB prüft die Abmeldung.
+3a) Der NB lehnt die Abmeldung des MSBA ab.
+3b) Der NB bestätigt die Abmeldung des MSBA vorläufig.
+4) Der NB bereitet die Rückübernahme der Messstelle vor.
+5a) Optional, kann der NB den MSBA weiterverpflichten.
+5b) Wenn der NB den MSBA weiterverpflichten, bestätigt der MSBA die Fortführung.
+6) Der NB führt die Geräteübernahme und/oder den Gerätewechsel durch.
+7) Der NB ordnet den NB als MSB zu.
+8) Der NB informiert den MSBA über das Zuordnungsende des MSBA und den Zuordnungsbeginn des NB
+9) Der NB informiert den MDLA über die Zuordnung des NB.
+10) Der NB informiert den LF über die Zuordnung des NB

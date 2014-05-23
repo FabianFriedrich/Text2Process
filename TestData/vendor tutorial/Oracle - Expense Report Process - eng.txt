@@ -1,0 +1,10 @@
+#http://download.oracle.com/docs/cd/E13154_01/bpm/docs65/tutorial/index.html (2010-07-08)
+#comment line.
+An employee purchases a product or service he requires. For instance, a sales person on a trip rents a car.
+The employee submits an expense report with a list of items, along with the receipts for each item.
+A supervisor reviews the expense report and approves or rejects the report. Since the company has expense rules, there are circumstances where the supervisor can accept or reject the report upon first inspection. These rules could be automated, to reduce the workload on the supervisor.
+If the supervisor rejects the report, the employee, who submitted it, is given a chance to edit it, for example to correct errors or better describe an expense. If the supervisor approves the report, it goes to the treasurer.
+The treasurer checks that all the receipts have been submitted and match the items on the list. If all is in order, the treasurer accepts the expenses for processing (including, e.g. , payment or refund, and accounting). If receipts are missing or do not match the report, he sends it back to the employee.
+If a report returns to the employee for corrections, it must again go to a supervisor, even if the supervisor previously approved the report.
+If the treasurer accepts the expenses for processing, the report moves to an automatic activity that links to a payment system. The process waits for the payment confirmation.
+After the payment is confirmed, the process ends.
