@@ -113,7 +113,8 @@ public class LaneSplitOffControler implements ActionListener, WorkbenchEditorLis
 				}
 			}
 			
-			ProcessUtils.sortClusters(_model);
+			//TODO Test was sort Clusters
+			ProcessUtils.sortTopologically(_model);
 			layoutModel(_pe);	
 		}
 	}

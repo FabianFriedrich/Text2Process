@@ -76,7 +76,7 @@ public class FrameNetWrapper {
 			//reading valence patterns from reduced corpus
 			f_corpus = new AnnotationCorpus(f_frameNet,_l);
 			f_corpus.setScanSubCorpuses(false);
-			f_corpus.parse(new File(FrameNetWrapper.class.getResource(f_frameNetHome+"/lu-reduced").getFile()));
+			f_corpus.parse(new File(FrameNetWrapper.class.getResource(f_frameNetHome+"lu").getFile()));
 			
 			//logging loading time
 			System.out.println("Loaded FrameNet-Annotations in: "+(System.currentTimeMillis()-_annoStart)+"ms");			

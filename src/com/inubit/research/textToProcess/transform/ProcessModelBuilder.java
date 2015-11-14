@@ -129,8 +129,8 @@ public class ProcessModelBuilder {
 		if(f_mainPool.getProcessNodes().size() == 0) {
 			f_model.removeNode(f_mainPool);
 		}		
-		
-		ProcessUtils.sortClusters(f_model);
+		//TODO Test was sortClusters
+		ProcessUtils.sortTopologically(f_model);
 		layoutModel(f_model);
 		layoutModel(f_model);
 		f_parent.setElementMapping(f_elementsMap);

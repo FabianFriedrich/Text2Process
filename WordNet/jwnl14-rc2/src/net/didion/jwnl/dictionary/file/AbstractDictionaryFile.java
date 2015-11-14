@@ -55,6 +55,8 @@ public abstract class AbstractDictionaryFile implements DictionaryFile {
 	/** Open the file. */
 	public void	open() throws IOException {
 		if (!isOpen())
+			System.out.println(_file.getAbsolutePath());
+		
 			openFile(_file);
 	}
 }

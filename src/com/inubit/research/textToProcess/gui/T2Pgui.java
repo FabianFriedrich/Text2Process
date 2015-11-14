@@ -36,8 +36,8 @@ import net.frapu.code.visualization.bpmn.Gateway;
 import net.frapu.code.visualization.helper.EmptyNodeOnSelectMenu;
 
 import com.inubit.research.gui.Workbench;
-import com.inubit.research.gui.plugins.variants.HeuristicModelDiff;
-import com.inubit.research.gui.plugins.variants.MatchedPair;
+//import com.inubit.research.gui.plugins.variants.HeuristicModelDiff;
+//import com.inubit.research.gui.plugins.variants.MatchedPair;
 import com.inubit.research.textToProcess.Constants;
 import com.inubit.research.textToProcess.TextStatistics;
 import com.inubit.research.textToProcess.TextToProcess;
@@ -475,37 +475,39 @@ public class T2Pgui extends javax.swing.JFrame implements ProcessEditorListener,
      * @param evt
      */
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-    	File _f = ConverterHelper.pickFileForImport(f_lastDirectoryCompare);
-    	if(_f != null) {
-    		f_lastDirectoryCompare = _f.getParentFile();
-	    	List<ProcessModel> _models;
-			try {
-				_models = ConverterHelper.importModels(_f);
-				if(_models.get(0) instanceof BPMNModel) {
-					HeuristicModelDiff.setUseIDAnalysis(false);
-					HeuristicModelDiff.setUseContextAnalysis(true);
-					HeuristicModelDiff.setUseAttributeAnalysis(true);
-					HeuristicModelDiff.setUseSemanticLabelAnalysis(false);
-					HeuristicModelDiff.setUseSyntacticLabelAnalysis(true);
-					
-					HeuristicModelDiff.setWeightskippedNodes(0.3);
-					HeuristicModelDiff.setWeightskippedEdges(0.3);
-					HeuristicModelDiff.setWeightsubstitutedNodes(0.4);
-					HeuristicModelDiff.setNotConsideredCutOffSimilarity(0.001);
-					
-		    		HeuristicModelDiff _result = compare(f_generatedModel,(BPMNModel) _models.get(0));
-		    		_result = compare((BPMNModel) _models.get(0),f_generatedModel);
-		    		JOptionPane.showMessageDialog(this, 
-		    				"Similarity: "+f_compareFormat.format(_result.getGraphEditDistance()), "Compare Result", JOptionPane.INFORMATION_MESSAGE);
-		    	}else {
-		    		JOptionPane.showMessageDialog(this, "This is not a BPMN-Model file");
-		    	}
-			} catch (Exception e) {
-				JOptionPane.showMessageDialog(this, "The file could not be imported!");
-				e.printStackTrace();
-			}
-	    	
-    	}	
+    	
+    	JOptionPane.showMessageDialog(this, "Sorry we code to compare model similarity is not provided as part of the project");
+//    	File _f = ConverterHelper.pickFileForImport(f_lastDirectoryCompare);
+//    	if(_f != null) {
+//    		f_lastDirectoryCompare = _f.getParentFile();
+//	    	List<ProcessModel> _models;
+//			try {
+//				_models = ConverterHelper.importModels(_f);
+//				if(_models.get(0) instanceof BPMNModel) {
+//					HeuristicModelDiff.setUseIDAnalysis(false);
+//					HeuristicModelDiff.setUseContextAnalysis(true);
+//					HeuristicModelDiff.setUseAttributeAnalysis(true);
+//					HeuristicModelDiff.setUseSemanticLabelAnalysis(false);
+//					HeuristicModelDiff.setUseSyntacticLabelAnalysis(true);
+//					
+//					HeuristicModelDiff.setWeightskippedNodes(0.3);
+//					HeuristicModelDiff.setWeightskippedEdges(0.3);
+//					HeuristicModelDiff.setWeightsubstitutedNodes(0.4);
+//					HeuristicModelDiff.setNotConsideredCutOffSimilarity(0.001);
+//					
+//		    		HeuristicModelDiff _result = compare(f_generatedModel,(BPMNModel) _models.get(0));
+//		    		_result = compare((BPMNModel) _models.get(0),f_generatedModel);
+//		    		JOptionPane.showMessageDialog(this, 
+//		    				"Similarity: "+f_compareFormat.format(_result.getGraphEditDistance()), "Compare Result", JOptionPane.INFORMATION_MESSAGE);
+//		    	}else {
+//		    		JOptionPane.showMessageDialog(this, "This is not a BPMN-Model file");
+//		    	}
+//			} catch (Exception e) {
+//				JOptionPane.showMessageDialog(this, "The file could not be imported!");
+//				e.printStackTrace();
+//			}
+//	    	
+//    	}	
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -567,25 +569,25 @@ public class T2Pgui extends javax.swing.JFrame implements ProcessEditorListener,
 
 
 
-	private HeuristicModelDiff compare(BPMNModel model1,BPMNModel gen) {
-		HeuristicModelDiff _differ = new HeuristicModelDiff(model1,gen);
-		System.out.println("Mapping:");
-		System.out.println(_differ.toString());
-		System.out.println("---------------------");
-		System.out.println("Unmatched Nodes: ");
-		ArrayList<ProcessNode> _nodes = new ArrayList<ProcessNode>(model1.getNodes());
-		for(MatchedPair mp:_differ) {
-			_nodes.remove(mp.getObject1());
-		}
-		for(ProcessNode pn:_nodes) {
-			System.out.println(pn);
-		}
-		System.out.println("Graph-Edit-Distance: "+_differ.getGraphEditDistance());
-		System.out.println("Nodes(gen, hum): "+gen.getNodes().size()+" - "+model1.getNodes().size());
-		System.out.println("\tGateways (gen, hum): "+countGateways(gen.getNodes())+" - "+countGateways(model1.getNodes()));
-		System.out.println("Edges (gen, hum): "+gen.getEdges().size()+" - "+model1.getEdges().size());
-		return _differ;
-	}
+//	private HeuristicModelDiff compare(BPMNModel model1,BPMNModel gen) {
+//		HeuristicModelDiff _differ = new HeuristicModelDiff(model1,gen);
+//		System.out.println("Mapping:");
+//		System.out.println(_differ.toString());
+//		System.out.println("---------------------");
+//		System.out.println("Unmatched Nodes: ");
+//		ArrayList<ProcessNode> _nodes = new ArrayList<ProcessNode>(model1.getNodes());
+//		for(MatchedPair mp:_differ) {
+//			_nodes.remove(mp.getObject1());
+//		}
+//		for(ProcessNode pn:_nodes) {
+//			System.out.println(pn);
+//		}
+//		System.out.println("Graph-Edit-Distance: "+_differ.getGraphEditDistance());
+//		System.out.println("Nodes(gen, hum): "+gen.getNodes().size()+" - "+model1.getNodes().size());
+//		System.out.println("\tGateways (gen, hum): "+countGateways(gen.getNodes())+" - "+countGateways(model1.getNodes()));
+//		System.out.println("Edges (gen, hum): "+gen.getEdges().size()+" - "+model1.getEdges().size());
+//		return _differ;
+//	}
 
     /**
 	 * @param nodes
