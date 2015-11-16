@@ -7,6 +7,8 @@
  */
 package com.inubit.research.textToProcess.processing;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -45,7 +47,13 @@ public class WordNetWrapper {
 		Locale.setDefault(Locale.US);
 		long _start = System.currentTimeMillis();
 		try {
-			JWNL.initialize(WordNetWrapper.class.getResource("/file_properties.xml").openStream());
+			URL _url = WordNetWrapper.class.getResource("/file_properties.xml");
+			if(_url == null){
+				File _f = new File("resources/file_properties.xml");				
+				JWNL.initialize(new FileInputStream(_f));
+			}else{		
+				JWNL.initialize(_url.openStream());
+			}
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

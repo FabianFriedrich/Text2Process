@@ -8,6 +8,7 @@
 package com.inubit.research.textToProcess.processing;
 
 import java.io.File;
+import java.net.URL;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
@@ -61,9 +62,18 @@ public class FrameNetWrapper {
 			f_frameNet = new FrameNet();
 			//f_frameNet.getLexicalUnits(lemma, PartOfSpeech.Verb)
 			// Create a new DatabaseReader
+			DatabaseReader reader;
 			
-			DatabaseReader reader = new FNDatabaseReader(new File(FrameNetWrapper.class.getResource(f_frameNetHome).toURI()), false);
-			
+			URL _url = FrameNetWrapper.class.getResource(f_frameNetHome);
+			if(_url == null){
+				//loading from an IDE
+				File _fnDirectory = new File("resources"+f_frameNetHome);
+				reader = new FNDatabaseReader(_fnDirectory, false);
+			}else{
+				//loading from a jar file
+				reader = new FNDatabaseReader(new File(_url.toURI()), false);
+			}
+						
 			// Reading FrameNet
 			f_frameNet.readData(reader);			
 			Logger _l = Logger.getLogger("this");
@@ -76,8 +86,17 @@ public class FrameNetWrapper {
 			//reading valence patterns from reduced corpus
 			f_corpus = new AnnotationCorpus(f_frameNet,_l);
 			f_corpus.setScanSubCorpuses(false);
-			f_corpus.parse(new File(FrameNetWrapper.class.getResource(f_frameNetHome+"lu").getFile()));
 			
+			URL _u = FrameNetWrapper.class.getResource(f_frameNetHome+"lu");
+			if(_u == null){
+				//loading from an IDE
+				File _fnluFiles = new File("resources/"+f_frameNetHome+"lu");
+				f_corpus.parse(_fnluFiles);
+			}else{
+				//loading from a jar file
+				f_corpus.parse(new File(_u.getFile()));
+			}
+				
 			//logging loading time
 			System.out.println("Loaded FrameNet-Annotations in: "+(System.currentTimeMillis()-_annoStart)+"ms");			
 		} catch (Exception ex) {

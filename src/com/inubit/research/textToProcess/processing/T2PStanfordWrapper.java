@@ -2,6 +2,7 @@ package com.inubit.research.textToProcess.processing;
 
 import java.io.BufferedInputStream;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.net.URL;
@@ -43,9 +44,15 @@ public class T2PStanfordWrapper {
 			ObjectInputStream in;
 		    InputStream is;
 		    URL u = T2PStanfordWrapper.class.getResource("/englishFactored.ser.gz");
-		    URLConnection uc = u.openConnection();
-		    is = uc.getInputStream();
-		    in = new ObjectInputStream(new GZIPInputStream(new BufferedInputStream(is)));   		
+		    if(u == null){
+		    	//opening from IDE
+		    	is = new FileInputStream(new File("resources/englishFactored.ser.gz"));		    		    	
+		    }else{
+		    	//opening from jar
+		    	URLConnection uc = u.openConnection();
+			    is = uc.getInputStream(); 				    
+		    }
+		    in = new ObjectInputStream(new GZIPInputStream(new BufferedInputStream(is)));  
 		    f_parser = new LexicalizedParser(in);
 			f_tlp = new PennTreebankLanguagePack(); //new ChineseTreebankLanguagePack();
 		    f_gsf = f_tlp.grammaticalStructureFactory();
